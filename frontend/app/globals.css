@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-geist-sans: 'Geist', system-ui, sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
+}
+
+body {
+  @apply bg-chat-bg text-zinc-100 antialiased;
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scroll-thin::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-zinc-600/50;
+}
+.scroll-thin::-webkit-scrollbar-thumb:hover {
+  @apply bg-zinc-500/60;
+}
